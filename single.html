@@ -74,13 +74,23 @@
                                     data: data,
                                     backgroundColor: "rgba(41, 63, 127, .15)",
                                     borderColor: "#003467",
-                                    borderWidth: 2,
+                                    borderWidth: 1,
                                     pointRadius: 2,
                                     tension: 1
                                 },
                             ],
                         },
                         options: {
+    animation,
+    interaction: {
+      intersect: false
+    },
+    plugins: {
+      legend: false
+    },
+    scales: {
+      x: {
+        type: 'linear'
                             scales: {
                                 yAxes: [
                                     {
